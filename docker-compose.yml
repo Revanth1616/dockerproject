@@ -1,25 +1,25 @@
 version: '3.8'
 services:
   movies:
-    image: revanth16/paytmmovies:latest
+    image: revanth16/movies:v1
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: revanth16/paytmtrain:latest
+    image: revanth16/train:v1
     ports:
       - "82:80"
     deploy:
       replicas: 3
   dth:
-    image: revanth16/paytmdth:latest
+    image: revanth16/dth:v1
     ports:
       - "83:80"
     deploy:
       replicas: 3
   recharge:
-    image: revanth16/paytmrecharge:latest
+    image: revanth16/recharge:v1
     ports:
       - "84:80"
     deploy:
